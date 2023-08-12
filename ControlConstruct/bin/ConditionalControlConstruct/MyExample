@@ -1,0 +1,309 @@
+    CONTROL CONSTRUCT
+    @ Conditional control construct
+    
+     1) Simple If
+ 
+ package CnditionalControlConstruct;
+
+public class SimpleIf {
+
+	public static void main(String[] args) {
+		int run=99;
+		System.out.println("playing in 11");
+		if(run>=50 && run<100)
+		{
+			System.out.println("scored half century");
+		}
+	}
+}
+ ====================
+ playing in 11
+scored half century
+          
+          * Nested Simple If
+          
+  package CnditionalControlConstruct;
+
+import java.util.Scanner;
+
+public class NestedSimpleIf {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("lets go for blood donation");
+		System.out.println("enter your age");
+		int age=scan.nextInt();
+		if(age<=50 && age>=20)
+		{
+			System.out.println("you are eligible for blood donation");
+		}
+		if(age>50 )
+		{
+			System.out.println("you are not eligible for blood donation");
+		}
+		
+	}
+
+}
+  =============
+  lets go for blood donation
+enter your age
+45
+you are eligible for blood donation
+      ==============================================
+      2) If Else
+      package CnditionalControlConstruct;
+
+import java.util.Scanner;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter your marks");
+		int marks=scan.nextInt();
+		if(marks<15)
+		{
+			System.out.println("fail");
+		}
+		else
+		{
+			System.out.println("pass");
+		}
+	}
+
+}
+      ==================
+      enter your marks
+21
+pass
+      ======================================================
+      
+      * Nested If Else
+      
+      package CnditionalControlConstruct;
+
+import java.util.Scanner;
+
+public class NestedIfElse {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter your age");
+		int age=scan.nextInt();
+		if(age>13)
+		{
+		if(age>18)
+		{
+			System.out.println("you are eligeble for NEET entrance exam");
+		}
+		else
+		{
+			System.out.println("you are not eligeble for NEET entrance exam");
+		}
+		}
+		else
+		{
+			System.out.println("you are a child");
+		}
+   }
+
+}
+  ===================
+  Enter your age
+14
+you are not eligeble for NEET entrance exam
+  ========================================================================
+  **
+  package CnditionalControlConstruct;
+
+import java.util.Scanner;
+
+public class NestedIfElse {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter your age");
+		int age=scan.nextInt();
+		if(age>18 && age<50)
+		{
+			System.out.println("you are eligeble for working");
+		}
+		else
+			{
+			if(age>50)
+			{
+				System.out.println("Senior citizen");
+			}
+			else
+			{
+				System.out.println("citizen");
+			}
+		}
+}
+}
+============
+Enter your age
+55
+Senior citizen
+
+================================================================================
+           3)If Else Ladder 
+  
+  package CnditionalControlConstruct;
+
+import java.util.Scanner;
+
+public class IfElseLadder {
+public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	System.out.println("enter the money");
+	int money=scan.nextInt();
+	if(money>50000)
+	{
+		System.out.println("buy IPhone");
+	}
+	else if(money>40000 && money<50000)
+	{
+		System.out.println("buy samsung");	
+	}
+	else if(money>30000 && money<40000)
+	{
+		System.out.println("buy 1+");	
+	}
+	else if(money>20000 && money<30000)
+	{
+		System.out.println("buy realme");	
+	}
+	else if(money>10000 && money<20000)
+	{
+		System.out.println("buy Motorolo");	
+	}
+	else
+	{
+		System.out.println("go and earn first");
+	}
+	}
+}
+ ==================
+ enter the money
+23000
+buy realme
+ ============================================================================
+              4) The Switch Conditional control construct
+                      
+package CnditionalControlConstruct;
+
+import java.util.Scanner;
+
+public class Switch {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the jourcy number");
+		int jourcy=scan.nextInt();
+		switch(jourcy) {
+	            case 1:
+	                System.out.println("It's MSD");
+	                break;
+	            case 2:
+	                System.out.println("It's Kohli");
+	                break;
+	            case 3:
+	                System.out.println("It's Rohit");
+	                break;
+	            case 4:
+	                System.out.println("It's Raina");
+	                break;
+	            case 5:
+	                System.out.println("It's Jadeja");
+	                break;
+	            case 6:
+	                System.out.println("It's Sachin");
+	                break;
+	            case 7:
+	                System.out.println("It's Sehwag");
+	                break;
+	            default:
+	                System.out.println("Invalid jourcy");
+	        }
+	    }
+	}
+================
+enter the jourcy number
+5
+It's Jadeja
+
+             @ Looping control construct
+  
+     1) For Loop
+     package LoopingControlConstruct;
+
+public class ForLoop {
+public static void main(String[] args) {
+		for(int i=1; i<=5;i++)
+		{
+	System.out.println("Be kind to everyone");
+	//i+=1;(i++) 
+}
+}
+}
+==========
+Be kind to everyone
+Be kind to everyone
+Be kind to everyone
+Be kind to everyone
+Be kind to everyone
+
+          2)While Loop
+  package LoopingControlConstruct;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		int i=28;
+		while(i>=23)
+		{
+			System.out.println("Knowledge");
+		i--;
+	}
+}
+}
+======================
+Knowledge
+Knowledge
+Knowledge
+Knowledge
+Knowledge
+Knowledge
+     =====================================================================
+        
+        3) Do While Loop
+  package LoopingControlConstruct;
+
+public class DoWhileLoop {
+
+	public static void main(String[] args) {
+		int i=23;
+		do
+		{
+		System.out.println("Bangaluru");
+		i--;
+        }while(i>=17);
+        	
+	}
+}
+  ===================
+Bangaluru
+Bangaluru
+Bangaluru
+Bangaluru
+Bangaluru
+Bangaluru
+Bangaluru
+        
+           
+          
+     
+     
+          
